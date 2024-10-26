@@ -161,6 +161,10 @@ public class AplicacaoExceptionHandler extends ExceptionHandlerWrapper {
     }
   }
 
+  /**
+   * @param t
+   * @param aplicacaoException
+   */
   private void tratarErroPeloAplicacaoException(final Throwable t, final AplicacaoException aplicacaoException) {
     if (CollectionUtils.isEmpty(aplicacaoException.getCustomExceptionValues())) {
 
